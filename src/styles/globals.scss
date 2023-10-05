@@ -1,0 +1,36 @@
+:root {
+	--container-size: 1345px;
+}
+
+html {
+	height: 100%;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: white;
+	background-color: black;
+}
+
+body {
+	max-height: 100vh;
+	overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}

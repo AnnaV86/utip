@@ -1,0 +1,78 @@
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	animation: showModal 200ms;
+	color: black;
+}
+
+.modal {
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 12px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 32px;
+	width: 300px;
+}
+
+.text {
+	text-align: center;
+	font-weight: 600;
+}
+
+.wrapper {
+	padding: 32px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 90vh;
+}
+
+@keyframes showModal {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.buttonsWrap {
+	display: flex;
+	gap: 20px;
+}
+
+.button,
+.buttonCancel {
+	height: 40px;
+	width: 150px;
+	background-color: rgb(42, 116, 201);
+	border-radius: 4px;
+	border-color: blueviolet;
+	cursor: pointer;
+}
+
+.button:hover {
+	box-shadow: 2px 2px 5px blueviolet;
+	background-color: rgb(252, 83, 252);
+}
+
+.buttonCancel {
+	background-color: rgb(255, 0, 0);
+}
+
+.buttonCancel:hover {
+	box-shadow: 2px 2px 5px red;
+}

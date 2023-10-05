@@ -1,0 +1,51 @@
+.inputWrapper {
+	display: block;
+	height: 70px;
+}
+
+.input {
+	border-color: blueviolet;
+	height: 40px;
+	width: 400px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 4px;
+	outline-style: solid;
+	outline-color: transparent;
+	line-height: 120%;
+	box-shadow: 5px 5px 5px blueviolet;
+}
+
+.input:focus {
+	background-color: rgb(255, 255, 255);
+}
+
+.label {
+	display: block;
+	font-size: 14px;
+	line-height: 120%;
+	letter-spacing: -0.84px;
+	margin-bottom: 8px;
+}
+
+.inputError {
+	border: none;
+	outline-color: #ff4949;
+	box-shadow: 5px 5px 5px #ff4949;
+}
+
+.error {
+	color: #ff4949;
+	font-size: 12px;
+	margin-top: 4px;
+	text-align: end;
+}
+
+@media (max-width: 500px) {
+	.inputWrapper {
+		width: 100%;
+	}
+
+	.input {
+		width: 100%;
+	}
+}

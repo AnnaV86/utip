@@ -1,0 +1,29 @@
+.wrapperPagination {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin: 10px;
+}
+
+.page {
+	width: 25px;
+	height: 25px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.active {
+	background-color: rgb(252, 83, 252);
+	color: blueviolet;
+	font-weight: 600;
+}
+
+.page:hover {
+	box-shadow: 2px 2px 15px rgb(47, 189, 255);
+	transform: scale(1.1);
+}
+
+.page.active:hover {
+	box-shadow: none;
+	transform: none;
+}

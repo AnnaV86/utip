@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"target": "ES6",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"lib": ["DOM", "ESNext"],
+		"types": ["node"],
+		"jsx": "react-jsx",
+		"newLine": "CRLF",
+		"strict": true,
+		"noEmit": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"typeRoots": ["./node_modules/@types", "./src/declarations"],
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": "./",
+		"paths": {
+			"@src/*": ["src/*"]
+		}
+	},
+	"ts-node": {
+		"compilerOptions": {
+			"module": "commonjs"
+		},
+		"esModuleInterop": true
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
+}
